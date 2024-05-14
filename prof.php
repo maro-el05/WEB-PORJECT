@@ -7,7 +7,7 @@ $dbname = "absence_management";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
-    die("La connexion a échoué : " . $conn->connect_error);
+    die("La connexion a echoue : " . $conn->connect_error);
 }
 
 $module = $_POST['module'];
@@ -27,12 +27,12 @@ if ($result->num_rows > 0) {
         echo "<tr>";
         echo "<td style='border: 1px solid black; padding: 8px;'>" . $row['prenom'] . "</td>";
         echo "<td style='border: 1px solid black; padding: 8px;'>" . $row['name'] . "</td>";
-        echo "<td style='border: 1px solid black; padding: 8px;'>" . $row['absence_count'] . " séances" . "</td>";
+        echo "<td style='border: 1px solid black; padding: 8px;'>" . $row['absence_count'] . " seances" . "</td>";
         echo "</tr>";
     }
     echo "</table>";
 } else {
-    echo "Aucun étudiant trouvé pour ce module";
+    echo "Aucun etudiant trouve pour ce module";
 }
 
 $conn->close();
