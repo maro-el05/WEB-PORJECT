@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Étudiants</title>
+    <link rel="stylesheet" href="prof.css">
+</head>
+<body>
+    <h2> ESPACE PROFESSEUR </h2>
+    <form action="prof.php" method="post">
+        <label for="name">username:</label>
+        <input type="text" name="name">
+        <label for="password">password:</label>
+        <input type="text" name="password">
+        <label for="module">Sélectionnez le module :</label>
+        <select id="module" name="module">
+            <option value="web">web</option>
+            <option value="si">systeme d'exploitation</option>
+            <option value="si">programmation avancee</option>
+            <option value="si">systeme d'information</option>
+        </select><br><br>
+
+        <button type="submit">Afficher les étudiants</button>
+
+        <div class="link-container">
+            <a href="acceuil.html">Retour à l'accueil</a>
+        </div>
+    </form>
+</body>
+</html>

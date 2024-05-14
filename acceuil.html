@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HOME PAGE</title>
+	<style type="text/css">
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background: blueviolet; font-family: calibri; padding-right: 15px;padding-left: 15px; padding-bottom: 50px;
+			border-bottom: 2px solid black; 
+
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 35px; font-weight: 600; color: white;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color: white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+		button{
+			background-color: black; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+		}
+        button a{
+			color: white; font-weight: bold; font-size: 15px;
+		}
+	</style>
+    <link rel="stylesheet" href="acceuil.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navdiv">
+			<div class="logo"><a href="#">Gestion des Absences</a> </div>
+			<ul>
+				<li><a href="acceuil.html">Home</a></li>
+				<li><a href="etudiant.html">Espace Etudiant</a></li>
+				<li><a href="prof.html">Espace Professeur</a></li>
+				<li><a href="prof.html">Nouvel Etudiant</a></li>
+
+			</ul>
+		</div>
+	</nav>
+    <div class="page" >
+        <div class="header">
+            <h1>MENU</h1>
+        </div>
+        
+        <div class="middle-content">
+            <a href="prof.html" class="box">
+                <div>ESPACE DU PROFESSEUR</div>
+            </a>
+            <a href="etudiant.html" class="box">
+                <div>ESPACE ETUDIANT</div>
+            </a>
+			<a href="register.html" class="box">
+                <div>NOUVEL ETUDIANT</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

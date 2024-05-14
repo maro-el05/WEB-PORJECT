@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div id="reg">
+        
+        <form  id="form" action="register.php" method="post">
+            <h2 >NOUVEL ETUDIANT:</h2>
+            <label class="lbls" for="name">Nom:</label>
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="entrer le nom" required><br><br>
+            </div>
+             
+            <label class="lbls" for="prenom">Prenom:</label>
+            <div class="input-box">
+                <input type="text" id="prenom" name="prenom" placeholder="entrer le prenom" required><br><br>
+            </div>
+            
+            <label class="lbls" for="module">Module:</label>
+            <div class="input-box">
+                <input type="text" id="module" name="module" placeholder="entrer le module" required><br><br>
+            </div>
+            
+            <label class="lbls" for="absence_count">Absence Count:</label>
+            <div class="input-box">
+                <input type="number" id="absence_count" name="absence_count" placeholder="entrer le nombre d'abscence"required><br><br>
+            </div>
+
+            <button  type="submit" class="btn" >Submit</button> <br><br>
+            <a href="acceuil.html" style="color: white; text-align: center; display: block; margin-top: 20px;">Acceuil Page</a>
+        </form>
+    </div>
+
+    
+    
+
+</body>
+</html>
