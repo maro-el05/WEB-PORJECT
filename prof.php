@@ -11,6 +11,13 @@ if ($conn->connect_error) {
 }
 
 $module = $_POST['module'];
+$name= $_POST['name'];
+$paswd = $_POST['password'];
+
+$check_sql = "SELECT username, password FROM prof WHERE username = '$name' AND password = '$paswd'";
+$prof_result = $conn->query($check_sql);
+
+if ($prof_result->num_rows > 0) {
 
 $sql = "SELECT name, prenom, absence_count, module FROM students WHERE module = '$module'";
 $result = $conn->query($sql);
@@ -32,8 +39,10 @@ if ($result->num_rows > 0) {
     }
     echo "</table>";
 } else {
+
     echo "Aucun etudiant trouve pour ce module";
 }
-
+} else {
+    echo "Nom d'utilisateur ou mot de passe incorrect";}
 $conn->close();
 ?>
